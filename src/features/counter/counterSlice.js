@@ -21,7 +21,7 @@ export const counterSlice = createSlice({
     },
     //actions
     incrementByAmount: (state, action) => {
-      //   state.value += action.payload;
+      //   state.value += action.payload; // it was taking as string
         state.value += Number(action.payload);
     },
  
